@@ -1,7 +1,13 @@
 import styles from "./alert.module.css";
 import { clsx } from "clsx";
 
-function Alert({ children, type }) {
+function Alert({
+  children,
+  type,
+}: {
+  children: React.ReactNode;
+  type: "success" | "error";
+}) {
   return (
     <div
       className={clsx({

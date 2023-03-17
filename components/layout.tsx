@@ -7,7 +7,13 @@ import utilStyles from "../styles/utils.module.css";
 const name = "Spam Eggs";
 export const siteTitle = "Next.js Sample Website";
 
-function Layout({ children, home }) {
+function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div className={styles.container}>
       <Head>
